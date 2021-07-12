@@ -1,0 +1,8 @@
+---
+- name: To test create a file on desktop
+  hosts: all
+  tasks:
+    - name: Copy file
+      win_copy:
+        content: "This is a file created using Automation"
+        dest: C:\users\devops\desktop\hello.txt
